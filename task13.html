@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../assets/images/pic-blog-1.jpg">
+    <title>Registration Form</title>
+</head>
+<body style="background-color: beige">
+    <fieldset style="background-color: azure;">
+        <legend>Registration Form</legend>
+        <form action="./task13.1.html" target="_blank" method="post">
+            <!--input types-->
+            <!-- Read-only Input -->
+            <label for="Institute name">Institute name:</label>
+            <input type="text" id="1000 coder" name="1000 coder" value="1000 Coders" readonly><br><br>
+            <!-- Disabled Input -->
+            <label for="course name">course name:</label>
+            <input type="text" id="course name" name=Course" value="Front end language" disabled><BR><br>
+
+            <label for="First Name">FirstName:</label>
+            <input type="text" id="fname" name="First Name" ><br><br>
+
+            <label for="Last Name">LastName:</label>
+            <input type="text" id="lname" name="Last Name" maxlength="10" placeholder="Max 10 chars"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email(ex:aal@gmail.com)" ><br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone_number" placeholder="1234567890" pattern="[0-9]{10}" ><br><br>
+
+            <label for="age">Age (between 18 and 30):</label>
+            <input type="number" id="age" name="age" min="18" max="30"><br><br>
+
+            <label for="address">Home address:</label>
+            <textarea id="add" name="address" placeholder="give us detailed address"></textarea><br><br>
+
+            <label for="password">Password you want to keep:</label>
+            <input type="password" id="password" name="password" minlength="8" maxlength="16" required><br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" ><br><br>
+
+            <label for="class">Choose a time for your class:</label>
+            <input type="time" id="appt" name="class_time" ><br><br>
+
+            <!--radio button-->
+
+            <label>Gender:</label>
+
+            <input type="radio" id="male" name="gender" value="male">    
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">   
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br><BR>
+
+            <!-- Dropdown (Select of one) -->
+            
+            <label for="Place">City:</label>
+            <select id="City" name="City" required>
+
+               <option value="Hyd">Hyderabad</option>
+                <option value="War">Warangal</option>
+            </select><br><br>
+
+            <!-- Dropdown (Select of one and sub one) --> 
+
+            <label for="select preferd class online/offline">Class prefernce</label>
+            <select name="online/offline">
+                <optgroup label="online">
+                    <option value="moring">Moring</option>
+                    <option value="night">Night</option>
+                </optgroup>
+                <optgroup label="offline">
+                    <option value="hyd-jntu" selected>jntu_hyd</option>
+                    <option value="war_kphb">war_kphb</option>
+                </optgroup>
+            </select><br><br>
+
+            <!--DATALISTS-->
+            
+            <label for="language">Language:</label>
+            <input type="text" name="language" list="languages" placeholder="Choose a language">
+
+            <datalist id="languages">
+
+            <option value="English">
+            <option value="Telugu">
+            <option value="Hindh">
+            <option value="French">
+
+            </datalist><br><BR>
+
+            <!-- File Upload -->
+            <label for="resume">Upload Resume:</label>
+            <input type="file" id="resume" name="resume" accept=".pdf,.docx"><br></br>
+            <label for="Projects">Upload Projects:</label>
+            <input type="file" id="Projects" name="Projects"  multiple=2 pdf,.docx"><br><br>
+            
+
+            
+
+            <!--checkbox-->
+
+            <label for="Hobbies">Hobbies : </label><br>
+            <input type="checkbox" id="music" name="interest" value="music">
+            <label for="music">Music</label><br>
+
+            <input type="checkbox" id="dance" name="interest" value="dance">
+            <label for="dance">dance</label><br>
+
+            <input type="checkbox" id="travel" name="interest" value="travel">
+            <label for="travel">Travel</label><br>
+
+            <input type="checkbox" id="cooking" name="interest" value="cooking">
+            <label for="cooking">cooking</label><br><BR>
+
+            
+        <input type="submit" value="Submit">
+        <input type="submit" value="Login" formaction="../day to day tasks/task9.html/login.html">
+        
+        <input type="reset">
+        </form> 
+
+    </fieldset>
+
+</body>
+</html>
+<!-- <form>
+            <label for="A">what we have to write (ex:email):</label><br>
+            <input type="text" id="just is the identity for it that is it" name="Which we see in web after assigning value" value="">
+            <input type="submit" value="For <button>, <input> and <option> elements, the value attribute specifies the initial value of the element.">
+        </form> -->
